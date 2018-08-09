@@ -84,6 +84,7 @@ body {
   line-height: 40px;
   height: 0;
   opacity: 0;
+  font-size: 20px;
   transition: opacity 0.5s ease-in-out;
   position: relative;
   visibility: hidden;
@@ -114,7 +115,7 @@ body {
   padding:5px 0; 
 }
 .content ol {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 15px;
   position: relative;
 }
@@ -163,7 +164,7 @@ body {
 
 .app-icon {
   width: 45px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
