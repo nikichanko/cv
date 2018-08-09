@@ -110,11 +110,11 @@ body {
 }
 .content li {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   padding:5px 0; 
 }
 .content ol {
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 15px;
   position: relative;
 }
@@ -163,7 +163,7 @@ body {
 
 .app-icon {
   width: 45px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
