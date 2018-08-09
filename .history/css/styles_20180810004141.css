@@ -45,18 +45,18 @@ body {
   position: absolute;
   text-align: center;
   width: 100%;
+  font-size: 64px;
   top: 200px;
 }
 
 .item {
-  font-size: 64px;
   position: relative;
   left: 50%;
   opacity: 1;
   transform: translateX(-50%) ;
   -ms-transform: translateX(-50%) ; /* IE 9 */
   -webkit-transform: translateX(-50%); /* Safari 3-8 */
-  transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-in-out;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */

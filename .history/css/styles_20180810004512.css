@@ -45,11 +45,11 @@ body {
   position: absolute;
   text-align: center;
   width: 100%;
+  font-size: 64px;
   top: 200px;
 }
 
 .item {
-  font-size: 64px;
   position: relative;
   left: 50%;
   opacity: 1;
