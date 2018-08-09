@@ -79,8 +79,8 @@ body {
 }
 
 .ul-wrapper {
-  height: 520px;
-  position: relative;
+  height: 300px;
+  
   overflow: auto;
 }
 

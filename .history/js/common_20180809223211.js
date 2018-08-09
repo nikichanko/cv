@@ -28,6 +28,8 @@ var src2 = document.querySelector('#scroll-2');
 var src3 = document.querySelector('#scroll-3');
 var src4 = document.querySelector('#scroll-4');
 var options = {
+  wheelSpeed: 2,
+  wheelPropagation: false,
   maxScrollbarLength: 100,
 };
 

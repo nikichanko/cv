@@ -28,10 +28,9 @@ var src2 = document.querySelector('#scroll-2');
 var src3 = document.querySelector('#scroll-3');
 var src4 = document.querySelector('#scroll-4');
 var options = {
+  wheelSpeed: 1,
+  wheelPropagation: false,
   maxScrollbarLength: 100,
 };
 
-var ps1 = new PerfectScrollbar(src1, options);
-var ps2 = new PerfectScrollbar(src2, options);
-var ps3 = new PerfectScrollbar(src3, options);
-var ps4 = new PerfectScrollbar(src4, options);
+var ps = new PerfectScrollbar(src1, );
