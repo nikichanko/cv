@@ -24,6 +24,7 @@ $(".item").on('click', function() {
       $(v).removeClass('closed');
     }
   });
+
 });
 
 $('.close').on('click', function(){
