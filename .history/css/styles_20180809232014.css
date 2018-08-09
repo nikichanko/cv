@@ -19,6 +19,14 @@ ul, li, ol, body {
   margin: 0;
   padding: 0;
 }
+* {
+  -webkit-touch-callout:none; /* iOS Safari */
+  -webkit-user-select:none;   /* Chrome/Safari/Opera */
+  -khtml-user-select:none;    /* Konqueror */
+  -moz-user-select:none;      /* Firefox */
+  -ms-user-select:none;       /* Internet Explorer/Edge */
+  user-select:none; 
+}
 
 body {
   background-color: #323232;
@@ -46,10 +54,11 @@ body {
   text-align: center;
   width: 100%;
   font-size: 64px;
-  top: 200px;
+  top: 125px;
 }
 
 .item {
+  cursor: pointer;
   position: relative;
   left: 50%;
   opacity: 1;
@@ -65,10 +74,6 @@ body {
           user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome and Opera */
 }
-.item span {
-  cursor: pointer;
-  position: relative;
-}
 
 .item.closed {
   opacity: 0;
@@ -82,7 +87,7 @@ body {
   max-width: 600px;
   text-align: left;
   top: 50px;
-  width: 56%;
+  width: 55%;
   margin: 0 auto;
   line-height: 40px;
   height: 0;
@@ -90,17 +95,15 @@ body {
   transition: opacity 0.5s ease-in-out;
   position: relative;
   visibility: hidden;
-  overflow: hidden;
 }
 
 .ul-wrapper {
   height: 520px;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .content.open {
-  overflow: visible;
   height: auto;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;

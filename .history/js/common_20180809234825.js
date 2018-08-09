@@ -1,16 +1,3 @@
-var src1 = document.querySelector('#scroll-1');
-var src2 = document.querySelector('#scroll-2');
-var src3 = document.querySelector('#scroll-3');
-var src4 = document.querySelector('#scroll-4');
-var options = {
-  maxScrollbarLength: 100,
-};
-
-var ps1 = new PerfectScrollbar(src1, options);
-var ps2 = new PerfectScrollbar(src2, options);
-var ps3 = new PerfectScrollbar(src3, options);
-var ps4 = new PerfectScrollbar(src4, options);
-
 $(".item").on('click', function() {
   var _t = this;
   setTimeout(function(){
@@ -25,7 +12,6 @@ $(".item").on('click', function() {
       $(v).removeClass('closed');
     }
   });
-  ps4.update();
 });
 
 $('.close').on('click', function(){
@@ -36,3 +22,16 @@ $('.close').on('click', function(){
     $(v).next('.content').removeClass('open');
   });
 });
+
+var src1 = document.querySelector('#scroll-1');
+var src2 = document.querySelector('#scroll-2');
+var src3 = document.querySelector('#scroll-3');
+var src4 = document.querySelector('#scroll-4');
+var options = {
+  maxScrollbarLength: 100,
+};
+
+var ps1 = new PerfectScrollbar(src1, options);
+var ps2 = new PerfectScrollbar(src2, options);
+var ps3 = new PerfectScrollbar(src3, options);
+var ps4 = new PerfectScrollbar(src4, options);
