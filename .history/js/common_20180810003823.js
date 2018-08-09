@@ -11,12 +11,12 @@ var ps2 = new PerfectScrollbar(src2, options);
 var ps3 = new PerfectScrollbar(src3, options);
 
 $(".item span").on('click', function() {
-  var _t = $(this).parents('.item');
+  var _t = this;
   setTimeout(function(){
-    _t.next('.content').addClass('open');
+    $(_t).next('.content').addClass('open');
   },100);
   $('.item').each(function(i, v) {
-    if (!_t.is(v)) {
+    if (!$(_t).is(v)) {
       $(v).addClass('closed');
       $(v).next('.content').removeClass('open');
     }
