@@ -78,9 +78,8 @@ body {
   visibility: hidden;
 }
 
-.ul-wrapper {
-  height: 520px;
-  position: relative;
+.ul-wrapper{
+  height: 300px;
   overflow: auto;
 }
 
