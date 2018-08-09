@@ -25,7 +25,6 @@ $(".item").on('click', function() {
       $(v).removeClass('closed');
     }
   });
-  ps4.update();
 });
 
 $('.close').on('click', function(){

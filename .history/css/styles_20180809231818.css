@@ -46,10 +46,11 @@ body {
   text-align: center;
   width: 100%;
   font-size: 64px;
-  top: 200px;
+  top: 125px;
 }
 
 .item {
+  cursor: pointer;
   position: relative;
   left: 50%;
   opacity: 1;
@@ -65,10 +66,6 @@ body {
           user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome and Opera */
 }
-.item span {
-  cursor: pointer;
-  position: relative;
-}
 
 .item.closed {
   opacity: 0;
@@ -82,7 +79,7 @@ body {
   max-width: 600px;
   text-align: left;
   top: 50px;
-  width: 56%;
+  width: 55%;
   margin: 0 auto;
   line-height: 40px;
   height: 0;
@@ -90,17 +87,15 @@ body {
   transition: opacity 0.5s ease-in-out;
   position: relative;
   visibility: hidden;
-  overflow: hidden;
 }
 
 .ul-wrapper {
   height: 520px;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .content.open {
-  overflow: visible;
   height: auto;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -136,9 +131,6 @@ body {
   opacity: 0.6;
 }
 
-.item:hover {
-  color: #a4cbe6;
-}
 
 .close {
   position: absolute;

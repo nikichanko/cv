@@ -46,7 +46,7 @@ body {
   text-align: center;
   width: 100%;
   font-size: 64px;
-  top: 200px;
+  top: 125px;
 }
 
 .item {
@@ -90,7 +90,6 @@ body {
   transition: opacity 0.5s ease-in-out;
   position: relative;
   visibility: hidden;
-  overflow: hidden;
 }
 
 .ul-wrapper {
@@ -100,7 +99,6 @@ body {
 }
 
 .content.open {
-  overflow: visible;
   height: auto;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
