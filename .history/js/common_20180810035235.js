@@ -10,7 +10,7 @@ var ps1 = new PerfectScrollbar(src1, options);
 var ps2 = new PerfectScrollbar(src2, options);
 var ps3 = new PerfectScrollbar(src3, options);
 
-$(".item:not(.print) span").on('click', function() {
+$(".item span").on('click', function() {
   var _t = $(this).parents('.item');
   setTimeout(function(){
     _t.next('.content').addClass('open');
@@ -24,10 +24,6 @@ $(".item:not(.print) span").on('click', function() {
       $(v).removeClass('closed');
     }
   });
-});
-
-$(".item.print span").on('click', function() {
-  window.location.href = 'print.html';
 });
 
 $('.close').on('click', function(){

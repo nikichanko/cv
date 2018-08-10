@@ -25,7 +25,6 @@ $(".item:not(.print) span").on('click', function() {
     }
   });
 });
-
 $(".item.print span").on('click', function() {
   window.location.href = 'print.html';
 });
