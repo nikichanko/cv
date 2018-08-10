@@ -5,7 +5,6 @@ $.get( "index.html", function( data ) {
     contents.each(function( i,v ) {
       var cont = v.innerHTML;
       var item = items[i].innerText;
-      $("#content").append($('<div class="item")>'+item+'</div><div class="content">'+cont+'</div>'));
     });
   }
 //  $( ".result" ).html( data );
