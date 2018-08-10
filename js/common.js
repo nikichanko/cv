@@ -38,3 +38,4 @@ $('.close').on('click', function(){
     $(v).next('.content').removeClass('open');
   });
 });
+

@@ -39,6 +39,13 @@ body {
   background-size: cover;
 }
 
+.header{
+  opacity: 0.5;
+  font-size: 14px;
+  position: absolute;
+  right: 5px;
+  text-align: right;
+}
 .menu {
   line-height: 70px;
   margin: 0 auto;
