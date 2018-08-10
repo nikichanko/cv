@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Just Gotta Smile';
+  src: url('./fonts/JustGottaSmile.woff2') format('woff2'),
+      url('./fonts/JustGottaSmile.woff') format('woff'),
+      url('./fonts/JustGottaSmile.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('./fonts/JosefinSlab.woff2') format('woff2'),
+      url('./fonts/JosefinSlab.woff') format('woff'),
+      url('./fonts/JosefinSlab.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+ul, li, ol, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #323232;
+  width: 100%;
+  font-family: 'Just Gotta Smile';
+  color: #fff;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url(../img/cv_bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+.page-title{
+  opacity: 0.5;
+  font-size: 14px;
+  position: absolute;
+  right: 5px;
+}
+.footer{
+  bottom: 0;
+  position: flex;
+}
+.menu {
+  line-height: 70px;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 200px;
+}
+
+.item {
+  font-size: 64px;
+  position: relative;
+  left: 50%;
+  opacity: 1;
+  transform: translateX(-50%) ;
+  -ms-transform: translateX(-50%) ; /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transition: opacity 0.2s ease-out;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+.item.print {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.item span {
+  cursor: pointer;
+  position: relative;
+}
+
+.item.closed {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.content {
+  font-family: 'Josefin Slab';
+  padding-top: 2px;
+  max-width: 600px;
+  text-align: left;
+  top: 50px;
+  width: 56%;
+  margin: 0 auto;
+  line-height: 40px;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.ul-wrapper {
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content.open {
+  overflow: visible;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  visibility: visible;
+}
+.content {
+  line-height: 30px;
+}
+.content ul {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.content li {
+  font-weight: bold;
+  font-size: 20px;
+  padding:5px 0; 
+}
+.content ol {
+  font-size: 18px;
+  margin-left: 15px;
+  position: relative;
+}
+.content ol:before {
+  content: "";
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 13px;
+  position: absolute;
+  left: -22px;
+  top: 8px;
+  opacity: 0.6;
+}
+
+.item:hover {
+  color: #a4cbe6;
+}
+
+.close {
+  position: absolute;
+  top: -29px;
+  left: -7px;
+  width: 45px;
+  height: 45px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 25px;
+  width: 2px;
+  background-color: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.app-icon {
+  width: 45px;
+  margin-right: 10px;
+}
+.form-title {
+  margin-top: 10px; 
+  font-size: 24px; 
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    width: 90%;  
+  }
+  .item span {
+    cursor: default;
+  }
+}
