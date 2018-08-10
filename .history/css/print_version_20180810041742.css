@@ -1,0 +1,9 @@
+@media print
+{
+  body {
+    background-color: #323232 !important;
+  }
+} 
+body {
+  background-color: #323232 !important;
+}
