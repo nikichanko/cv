@@ -3,7 +3,7 @@
   top:0;
   left: 15px;
 }
-.close, .form-title {
+.close {
   display: none;
 }
 .ul-wrapper{
