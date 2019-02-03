@@ -32,7 +32,7 @@ $(".item:not(.print) span").on('click', function() {
 var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    clickable: true
   },
 });
 
