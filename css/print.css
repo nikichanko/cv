@@ -33,3 +33,14 @@ body {
 .content li {
   font-size: 18px;
 }
+
+.swiper-all{
+  display: none;
+}
+
+a {
+  color: #323232;
+}
+.link-print {
+  display: block;
+}

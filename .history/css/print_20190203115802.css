@@ -1,3 +1,7 @@
+body {
+  background-color: #fff;
+  color: #323232
+}
 .content {
   margin: 0;
   top:0;
@@ -20,9 +24,20 @@
 .item {
   font-size: 28px;
 }
+.content ol:before {
+  background-color: #c2c2c2;
+}
 .content ol {
   font-size: 15px;
 }
 .content li {
   font-size: 18px;
+}
+
+.swiper-all{
+  display: none;
+}
+
+a {
+  color: #323232;
 }
