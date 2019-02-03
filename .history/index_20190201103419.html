@@ -2,18 +2,16 @@
 <html>
   <head>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scroll.js"></script>
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Nikolay Nikolov - Curriculum Vitae</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">Curriculum Vitae of Nikolay Nikolov<br/>&copy; Copyright 2019. All Rights Reserved</div> 
+      <div class="header">Curriculum Vitae of Nikolay Nikolov<br/>&copy; Copyright 2018. All Rights Reserved</div> 
       <div class="menu">
         <div class="item">
           <span>Skills</span>
@@ -23,16 +21,18 @@
           <div class="ul-wrapper" id="scroll-3">
             <ul>
               <li>Program Languages:</li>
-              <ol>ECMAScript 6, TypeScript, Objective C, Swift 4, JAVA</ol>
+              <ol>ECMAScript 6, Typescript, Objective C, Swift 4, JAVA</ol>
               <ol>HTML, JS, CSS (LESS and SASS), PHP</ol>
               <li>Frameworks and Libraries:</li>
-              <ol>React Native, React, WebSocket, Scoket.io, JQuery, Ajax, Smarty Template Engine</ol>
+              <ol>React Native, React, JQuery, Ajax, Smarty Template Engine</ol>
               <li>Program and Web Tools:</li> 
               <ol>Android Studio, Xcode 9, Node (npm)</ol>
               <ol>Apple Connect and Google Console, AppsFlyer, Fabric, Firebase, Faslane</ol>
               <ol>Photoshop, Illustrator, Sketch</ol>
               <li>Strong Knowledge in:</li> 
               <ol>GitFlow, RESTful API, Responsive and Mobile Design, UX and UI Design</ol>
+              <li>Best Practices in:</li>
+              <ol>OOP, Test Driven Development, Cross-platform development</ol>
               <li>Other Abilities:</li> 
               <ol>Digital Drawing of web application arts with a graphic tablet</ol>
             </ul>
@@ -75,11 +75,12 @@
           <div class="ul-wrapper" id="scroll-1">
             <ul>
               <li>As mobile developer:</li>
-              <ol>Applications in stores (UK only):</ol>
+              <ol>Applications in stores:</ol>
               
-                <a href=""><img src="img/casino.png" title="CasinoSlots" class="app-icon"  /></a>
-                <a href=""><img src="img/sh.png" title="Slostheaven" class="app-icon" /></a>
-                <a href=""><img src="img/mc.png" title="MansionCasino" class="app-icon" /></a>
+                <img src="img/casino.png" title="CasinoSlots" class="app-icon" style="margin-left: 10px;" />
+                <img src="img/ccbj.png" title="Casino BlackJack" class="app-icon" />
+                <img src="img/sh.png" title="Slostheaven" class="app-icon" />
+                <img src="img/mc.png" title="MansionCasino" class="app-icon" />
               
               <ol>Quick switching from web to mobile development</ol>
               <ol>The key person with a leading role in the mobile team</ol>
@@ -89,10 +90,8 @@
               <ol>Implementations: React Context, Geo location services, Biometric authentification with RESTful API 
                 login, React Navigation, Unit, Integration and Snapshot
                 Tests with Jest, executed in CI system (Bamboo), Cross-platform and multi-device layouts,
-                Image Sliders and other front-end implementations covered by many mobile devices.
-                Websocket integrations to handle webview chat messages using TypeScript. Custom Bridge between webview and react native to handle Post messages.
-                Notofications using Xtremepush where Native exposing was needed to work with React Native.
-                Also other custom functionalities were exposed to React Native like CookiesStorage for iOS.</ol>
+                Image Sliders and other front-end implementations with orientation support and covered by many mobile devices. 
+                Exposing Native functionalities to React Native (NativeModules and NativeEventEmitter)</ol>
               <li>As front-end developer:</li>
               <ol>Responsive and mobile designs with no compromises in details</ol>
               <ol>Developed many end-to-end web applications like Image Sliders with-lazy loading, 
@@ -101,32 +100,6 @@
               <ol>Unit testing with Jasmine</ol>
             </ul>
           </div>
-        </div>
-        <div class="item resources">
-          <span>Resources</span>
-        </div>
-        <div class="content">
-            <i class="close"></i>
-            <div class="ul-wrapper" id="scroll-4">
-              <ul>
-                <li>Download Applications</li>
-                  <span class="android"><a href="http://tiny.cc/owtw2y" target="_blank" title="Casino Blackjack.ipa">http://tiny.cc/owtw2y</a></span>
-                  <span class="ios"><a href="http://tiny.cc/owtw2y" target="_blank" title="Casino Blackjack.apk">http://tiny.cc/owtw2y</a></span>
-                <li>Drawing Gallery</li>
-                <ol><a href="http://tiny.cc/owtw2y" target="_blank">http://tiny.cc/owtw2y</a></ol>
-                <div class="swiper-all">
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div class="faraon"></div></div>
-                    <div class="swiper-slide"><div class="ian"></div></div>
-                    <div class="swiper-slide"><div class="nina"></div></div>
-                  </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                </div>
-                </div>
-              </ul>
-            </div>
         </div>
         <div class="item">
           <span>Contact</span>
@@ -144,8 +117,7 @@
           <span>Print Version</span>
         </div>
       </div>
-    </div>
-    <script src="js/swiper.min.js"></script>
+    </div> 
     <script src="js/common.js"></script>
   </body>
 </html>

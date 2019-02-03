@@ -184,8 +184,8 @@ body {
 }
 
 .app-icon {
-  width: 60px;
-  margin-right: 15px;
+  width: 45px;
+  margin-right: 10px;
 }
 .form-title {
   margin-top: 10px; 
@@ -193,25 +193,15 @@ body {
   text-align: center;
 }
 
-.swiper-all {
-  width: 95%;
-  height: 350px;
-  position: relative;
-  margin: 0 auto;
-}
 .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
- a {  
-   color: white;
-   text-decoration: underline;
-   cursor: pointer;
- }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  background: #fff;
   color: red;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -228,43 +218,8 @@ body {
   align-items: center;
 }
 
-.ian, .faraon, .nina {
-
- width: 100%;
- height: 100%;
- background-size: contain;
- background-repeat: no-repeat;
- background-position: 50% 50%;
-}
-.ian {
-  background-image: url('../img/ian.jpg');
-}
-.faraon {
-  background-image: url('../img/faraon.jpg');
-}
-.nina {
-  background-image: url('../img/ninaDobrev.jpg');
-}
-
-.ios, .android {
-  display: inline-block;
-  width: 144px;
-  height: 51px;
-  background-size: cover;
-  cursor: pointer;
-}
-.ios a, .android a {
-  display: block;
-  height: 100%;
-  font-size: 0px;
-}
-
-.ios {
-  background-image: url('../img/ios.png');
-  margin-left: 15px;
-}
-.android {
-  background-image: url('../img/android.png');
+.ian{
+ background-image: url('../img/ian.jpg');
 }
 
 @media only screen and (max-width: 1000px) {

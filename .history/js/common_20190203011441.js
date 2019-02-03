@@ -11,7 +11,7 @@ var options = {
 var ps1 = new PerfectScrollbar(src1, options);
 var ps2 = new PerfectScrollbar(src2, options);
 var ps3 = new PerfectScrollbar(src3, options);
-var ps4 = new PerfectScrollbar(src4, options);
+//var ps4 = new PerfectScrollbar(src4, options);
 
 $(".item:not(.print) span").on('click', function() {
   var _t = $(this).parents('.item');
