@@ -5,7 +5,6 @@ var src4 = document.querySelector('#scroll-4');
 
 var options = {
   maxScrollbarLength: 100,
-  swipeEasing: true,
 };
 
 var ps1 = new PerfectScrollbar(src1, options);
